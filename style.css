@@ -36,14 +36,16 @@ body{
     border-radius: 5px;
 }
 
-/*---------------
+/*--------------
     Main Section
 ----------------*/
 main{
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap: 2%;
     width: 80%;
     margin-left: 8%;
+    margin-bottom: 15%;
 }
 
 
@@ -87,17 +89,16 @@ main{
 article>div>img{
     width: 341px;
     border-radius: 10px 10px 0px 0px;
-    border-bottom: 0px;
-    margin-bottom: 0%;
-    padding-bottom: 0%;
 }
 
 .blog-info{
-    border:1px solid rgb(183, 182, 182);
+    border-left:   1px solid #E8E8E8;
+    border-right:  1px solid #E8E8E8; 
+    border-bottom: 1px solid #E8E8E8;
     border-radius: 0px 0px 10px 10px;
     width: 320px;
     height: 145px;
-    padding: 10px 10px 10px 10px;
+    padding:10px 10px 10px 10px;
 }
 .blog-info a{
     text-decoration: none;
@@ -111,6 +112,57 @@ article>div>img{
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+/*=====Bonus Button=====*/
+.bonus-button a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px ;
+    padding: 10px 20px;
+    background-color: rgb(42, 203, 48);
+    border-radius: 5px;
+    margin:0px 45% ;
+}
+
+/*========--===========
+    Footer Section
+==========--=========*/
+
+footer{
+    background-color: #191919;
+    height: 400px;
+    color: White;
+    margin-top: 8%;
+}
+
+footer h2{
+    font-size: 40px;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+.hr-line{
+    height: 0px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin: 0px 140px 35px 140px;
+}
+
+.options{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+}
+.options a {
+    text-decoration: none;
+    color: grey;
+}
+
+.social-sites{
+    font-size: 35px;
+    color: grey;
+    display: flex;
+    justify-content: space-around;
 }
 
 
