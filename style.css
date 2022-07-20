@@ -1,10 +1,6 @@
-/*----------
-
-------------*/
 body{
      font-family: 'Merriweather', serif;
      margin: 0px;
-     padding: 0px;
      width: 100%;
 }
 
@@ -12,15 +8,14 @@ body{
  Top Banner
 -=-=-=-=-=-==-*/
 .top-banner{
+    width: 80%;
     background: #191919;
     border-radius: 30px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
-    width: 80%;
-    margin: 50px 140px 0px 100px ;
     padding: 4% 0 0 7%;
-   
+    margin-bottom: 8%;
+    margin-left: 8%;
 }
 
 .top-part h1{
@@ -40,3 +35,82 @@ body{
     background-color: rgb(42, 203, 48);
     border-radius: 5px;
 }
+
+/*---------------
+    Main Section
+----------------*/
+main{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-left: 8%;
+}
+
+
+/*===================
+    sidebar Section
+=====================*/
+.sidebar{
+    width: 320px;
+    height: 276px;
+    background-color: #191919;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px;
+}
+
+.sidebar a{
+    text-decoration: none;
+    color: #191919;
+    text-align: center;
+    padding: 15px 20px;
+    border-radius: 7px;
+    background-color: #fff;
+    margin: 20px 20px;
+}
+
+#highlights{
+    background-color: rgb(42, 203, 48);
+    color: #fff;
+}
+
+/*==========
+    Blogs
+===========*/
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 2%;
+    grid-column-gap: 2%;
+}
+article>div>img{
+    width: 341px;
+    border-radius: 10px 10px 0px 0px;
+    border-bottom: 0px;
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+}
+
+.blog-info{
+    border:1px solid rgb(183, 182, 182);
+    border-radius: 0px 0px 10px 10px;
+    width: 320px;
+    height: 145px;
+    padding: 10px 10px 10px 10px;
+}
+.blog-info a{
+    text-decoration: none;
+    border:1px solid #191919;
+    color: #191919;
+    padding: 5px 12px;
+    border-radius: 5px;
+}
+
+.time-chat{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
