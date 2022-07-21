@@ -34,6 +34,26 @@ body{
     padding: 10px 15px;
     background-color: rgb(42, 203, 48);
     border-radius: 5px;
+    letter-spacing: 1px;
+    position: relative;
+    animation: glowing 3s ease 0.8s infinite alternate ;
+    animation-play-state: running;
+}
+
+@keyframes glowing {
+    from{
+    color: white;
+    font-size: 20px ;
+    background-color: rgb(42, 203, 48);
+    }
+
+    to{
+        background: #03e9f4;
+        color: #fff;
+        padding: 14px 20px;
+        letter-spacing: 3px;
+        box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4,  0 0 50px #03e9f4,  0 0 100px #03e9f4;
+    }
 }
 
 /*--------------
@@ -165,4 +185,60 @@ footer h2{
     justify-content: space-around;
 }
 
+/*~~~~~~~~~~~~~~~~~~~~
+    For Responsive
+~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*Dekstop*/
+@media screen and (min-width: 1024px)  {
+    .bonus-button{
+        display: none;
+    }  
+}
+
+/*Tablet*/
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    main{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    
+    .blogs{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .bonus-button{
+        display: visible;
+    }
+}
+
+/*====Mobile======*/
+
+@media screen and (max-width: 767px) {
+    .top-banner{ 
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    main{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    
+    .blogs{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .bonus-button{
+        display: none;
+    }
+
+    .options{
+        display: flex;
+        flex-direction:column ;
+        padding-bottom: 10px ;
+    }
+}
 
