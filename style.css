@@ -198,22 +198,42 @@ footer h2{
 
 /*Tablet*/
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+    
    .top-banner h1{
       font-size: 35px;
     }
    
     main{
         display: grid;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: 1fr;
+        justify-items: center;
+        margin-bottom: 20px;
     }
-    
-    .blogs{
+    .sidebar{
+        flex-direction: row;
+        margin-bottom: 60px;
+        height: auto;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        background: none;
+     }
+     .sidebar a{
+        border: 1px solid gray;
+        margin: 15px;
+     }
+     .blogs{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 200px;
     }
     
     .bonus-button{
         display: visible;
+        margin: 0 auto;
+    }
+    .bonus-button a{
+       margin: 0 auto;
     }
 }
 
@@ -223,54 +243,43 @@ footer h2{
     .top-banner{ 
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-      
     }
-    
-
-    .top-part{
-        margin: 0;
-    }
-    .top-part h1{
-        font-size: 22px;
-        font-weight: 700;
-        width: 228px;
-        height: 66px;
-        text-align: center;
-      }
-
-      .top-part p {
-        font-size: 14px;
-        font-weight: 400;
-        width: 228px;
-        height: 66px;
-        text-align: center;
-      }
-
     
     main{
         display: grid;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: 1fr;
+        justify-items: center;
+        padding: 0;
     }
     
     .blogs{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-
+        padding: 50px;
+        grid-row-gap: .5%;
+    }
+    .sidebar{
+       background: none;
+       width: auto;
+    }
+    .sidebar a{
+       border: 1px solid gray;
     }
     
     .bonus-button{
         display: none;
     }
-
+ 
     .options{
-        display: flex;
-        flex-direction:column ;
+       display: grid;
+       grid-template-columns: 1fr;
         padding-bottom: 10px ;
+        justify-items: center;
     }
-
-    footer h2{
-        padding-top: 40px;
-        padding-bottom: 30px;
+    footer >h2{
+       margin:  10px 0;
+       padding: 30px 0 40px 0;
     }
-}
-
+ }
+ 
+ 

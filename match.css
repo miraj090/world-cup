@@ -63,8 +63,8 @@ main{
    display: grid;
    grid-template-columns: repeat(2,1fr);
    grid-column-gap: 2%;
-   width: 80%;
-   margin-left: 8%;
+   width: 100vh;
+   padding: 0 8%;
    margin-bottom: 15%;
 }
 
@@ -197,18 +197,40 @@ footer h2{
 
 /*Tablet*/
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+   .top-part h1{
+      font-size: 55px;
+   }
    main{
        display: grid;
-       grid-template-columns: repeat(2,1fr);
+       grid-template-columns: 1fr;
+       justify-items: center;
+       
    }
-   
+   .sidebar{
+      flex-direction: row;
+      margin-bottom: 60px;
+      height: auto;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      background: none;
+   }
+   .sidebar a{
+      border: 1px solid gray;
+      margin: 15px;
+   }
    .blogs{
        display: grid;
        grid-template-columns: repeat(2, 1fr);
+       margin-bottom: 50px;
    }
    
    .bonus-button{
        display: visible;
+       margin: 0 auto;
+   }
+   .bonus-button a{
+      margin: 0 auto;
    }
 }
 
@@ -222,12 +244,22 @@ footer h2{
    
    main{
        display: grid;
-       grid-template-columns: repeat(2,1fr);
+       grid-template-columns: 1fr;
+       justify-items: center;
+       padding: 0;
    }
    
    .blogs{
        display: grid;
        grid-template-columns: repeat(1, 1fr);
+       padding: 50px;
+   }
+   .sidebar{
+      background: none;
+      width: auto;
+   }
+   .sidebar a{
+      border: 1px solid gray;
    }
    
    .bonus-button{
@@ -235,9 +267,14 @@ footer h2{
    }
 
    .options{
-       display: flex;
-       flex-direction:column ;
+      display: grid;
+      grid-template-columns: 1fr;
        padding-bottom: 10px ;
+       justify-items: center;
+   }
+   footer >h2{
+      margin:  10px 0;
+      padding: 30px 0 40px 0;
    }
 }
 
