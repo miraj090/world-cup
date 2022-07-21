@@ -1,0 +1,243 @@
+body{
+    font-family: 'Merriweather', serif;
+    margin: 0px;
+    width: 100%;
+}
+
+/*-=-=-=-=-=-=-=
+Top Banner
+-=-=-=-=-=-==-*/
+.top-banner{
+   width: 80%;
+   background: #191919;
+   border-radius: 30px;
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   padding: 4% 0 0 7%;
+   margin-bottom: 8%;
+   margin-left: 8%;
+}
+
+.top-part h1{
+   color: white;
+   font-size:65px ;
+}
+.top-part p{
+   color: white;
+   font-size: 16px ;
+   margin-bottom:53px ;
+}
+.top-part a{
+   color: white;
+   text-decoration: none;
+   font-size: 20px ;
+   padding: 10px 15px;
+   background-color: rgb(42, 203, 48);
+   border-radius: 5px;
+   letter-spacing: 1px;
+   position: relative;
+   animation: glowing 3s ease 0.8s infinite alternate ;
+   animation-play-state: running;
+}
+
+@keyframes glowing {
+   from{
+   color: white;
+   font-size: 20px ;
+   background-color: rgb(42, 203, 48);
+   }
+
+   to{
+       background: #03e9f4;
+       color: #fff;
+       padding: 14px 20px;
+       letter-spacing: 3px;
+       box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4,  0 0 50px #03e9f4,  0 0 100px #03e9f4;
+   }
+}
+
+/*--------------
+   Main Section
+----------------*/
+main{
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+   grid-column-gap: 2%;
+   width: 80%;
+   margin-left: 8%;
+   margin-bottom: 15%;
+}
+
+
+/*===================
+   sidebar Section
+=====================*/
+.sidebar{
+   width: 320px;
+   height: 276px;
+   background-color: #191919;
+   border-radius: 10px;
+   display: flex;
+   flex-direction: column;
+   padding: 10px 10px;
+}
+
+.sidebar a{
+   text-decoration: none;
+   color: #191919;
+   text-align: center;
+   padding: 15px 20px;
+   border-radius: 7px;
+   background-color: #fff;
+   margin: 20px 20px;
+}
+
+#highlights{
+   background-color: rgb(42, 203, 48);
+   color: #fff;
+}
+
+/*==========
+   Blogs
+===========*/
+.blogs{
+   display: grid;
+   grid-template-columns: 1fr 1fr  1fr;
+   grid-column-gap: 24px;
+   grid-row-gap: 24px;
+
+}
+
+.blog{
+   border: 1px solid #E8E8E8;
+   border-radius: 10px;
+   width: 312px;
+   height: 230px;
+   text-align: center;
+   padding: 53px 30px;
+}
+
+.flags{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   justify-content: space-around;
+   text-align: center;
+}
+.flags h4{
+   font-size: 16px;
+ 
+}
+
+.info p {
+   color: #4D4D4D;
+   font-weight: 400;
+}
+
+/*=====Bonus Button=====*/
+.bonus-button a{
+   color: white;
+   text-decoration: none;
+   font-size: 20px ;
+   padding: 10px 20px;
+   background-color: rgb(42, 203, 48);
+   border-radius: 5px;
+   margin:0px 45% ;
+}
+
+/*========--===========
+   Footer Section
+==========--=========*/
+
+footer{
+   background-color: #191919;
+   height: 400px;
+   color: White;
+   margin-top: 8%;
+}
+
+footer h2{
+   font-size: 40px;
+   text-align: center;
+   padding-top: 100px;
+   padding-bottom: 50px;
+}
+.hr-line{
+   height: 0px;
+   border: 1px solid rgba(255, 255, 255, 0.1);
+   margin: 0px 140px 35px 140px;
+}
+
+.options{
+   display: flex;
+   justify-content: space-evenly;
+   margin-bottom: 50px;
+}
+.options a {
+   text-decoration: none;
+   color: grey;
+}
+
+.social-sites{
+   font-size: 35px;
+   color: grey;
+   display: flex;
+   justify-content: space-around;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~
+   For Responsive
+~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*Dekstop*/
+@media screen and (min-width: 1024px)  {
+   .bonus-button{
+       display: none;
+   }  
+}
+
+/*Tablet*/
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+   main{
+       display: grid;
+       grid-template-columns: repeat(2,1fr);
+   }
+   
+   .blogs{
+       display: grid;
+       grid-template-columns: repeat(2, 1fr);
+   }
+   
+   .bonus-button{
+       display: visible;
+   }
+}
+
+/*====Mobile======*/
+
+@media screen and (max-width: 767px) {
+   .top-banner{ 
+       display: grid;
+       grid-template-columns: repeat(1, 1fr);
+   }
+   
+   main{
+       display: grid;
+       grid-template-columns: repeat(2,1fr);
+   }
+   
+   .blogs{
+       display: grid;
+       grid-template-columns: repeat(1, 1fr);
+   }
+   
+   .bonus-button{
+       display: none;
+   }
+
+   .options{
+       display: flex;
+       flex-direction:column ;
+       padding-bottom: 10px ;
+   }
+}
+

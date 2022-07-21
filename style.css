@@ -73,7 +73,7 @@ main{
     sidebar Section
 =====================*/
 .sidebar{
-    width: 320px;
+    width: 250px;
     height: 276px;
     background-color: #191919;
     border-radius: 10px;
@@ -198,6 +198,10 @@ footer h2{
 
 /*Tablet*/
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+   .top-banner h1{
+      font-size: 35px;
+    }
+   
     main{
         display: grid;
         grid-template-columns: repeat(2,1fr);
@@ -219,7 +223,29 @@ footer h2{
     .top-banner{ 
         display: grid;
         grid-template-columns: repeat(1, 1fr);
+      
     }
+    
+
+    .top-part{
+        margin: 0;
+    }
+    .top-part h1{
+        font-size: 22px;
+        font-weight: 700;
+        width: 228px;
+        height: 66px;
+        text-align: center;
+      }
+
+      .top-part p {
+        font-size: 14px;
+        font-weight: 400;
+        width: 228px;
+        height: 66px;
+        text-align: center;
+      }
+
     
     main{
         display: grid;
@@ -229,6 +255,7 @@ footer h2{
     .blogs{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
+
     }
     
     .bonus-button{
@@ -239,6 +266,11 @@ footer h2{
         display: flex;
         flex-direction:column ;
         padding-bottom: 10px ;
+    }
+
+    footer h2{
+        padding-top: 40px;
+        padding-bottom: 30px;
     }
 }
 
