@@ -31,7 +31,7 @@ Top Banner
    color: white;
    text-decoration: none;
    font-size: 20px ;
-   padding: 10px 15px;
+   padding: 10px 12px;
    background-color: rgb(42, 203, 48);
    border-radius: 5px;
    letter-spacing: 1px;
@@ -44,15 +44,15 @@ Top Banner
    from{
    color: white;
    background-color: rgb(42, 203, 48);
-   padding: 10px 15px;
+   padding: 10px 12px;
    }
 
    to{
        background: #03e9f4;
        color: #fff;
-       padding: 13px 18px;
-       letter-spacing: 3px;
-       box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4,  0 0 50px #03e9f4,  0 0 100px #03e9f4;
+       padding: 13px 15px;
+       letter-spacing: 2px;
+       box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4,  0 0 25px #03e9f4,  0 0 50px #03e9f4;
    }
 }
 
@@ -60,11 +60,16 @@ Top Banner
    Main Section
 ----------------*/
 main{
-   display: grid;
-   grid-template-columns: repeat(2,1fr);
-   grid-column-gap: 2%;
-   width: 100vh;
    padding: 0 8%;
+}
+
+.main{
+   display: grid;
+   grid-template-columns: 1fr 3fr;
+   grid-column-gap: 2%;
+   width: 100%;
+    /* padding: 0 8%;
+   margin-left: 8%; */
    margin-bottom: 15%;
 }
 
@@ -73,12 +78,11 @@ main{
    sidebar Section
 =====================*/
 .sidebar{
-   width: 320px;
    height: 276px;
    background-color: #191919;
    border-radius: 10px;
-   display: flex;
-   flex-direction: column;
+   display: grid;
+   grid-template-columns: 1fr;
    padding: 10px 10px;
 }
 
@@ -111,10 +115,10 @@ main{
 .blog{
    border: 1px solid #E8E8E8;
    border-radius: 10px;
-   width: 312px;
    height: 230px;
    text-align: center;
    padding: 53px 30px;
+   display: grid;
 }
 
 .flags{
@@ -125,9 +129,19 @@ main{
 }
 .flags h4{
    font-size: 16px;
- 
 }
 
+.flags img{
+   max-width: 100%;
+   object-fit: cover;
+}
+.info{
+   display: grid;
+   grid-template-columns: 1fr;
+}
+.info h2{
+   font-size: 22px;
+}
 .info p {
    color: #4D4D4D;
    font-weight: 400;
@@ -200,7 +214,7 @@ footer h2{
    .top-part h1{
       font-size: 55px;
    }
-   main{
+   .main{
        display: grid;
        grid-template-columns: 1fr;
        justify-items: center;
@@ -242,7 +256,7 @@ footer h2{
        grid-template-columns: repeat(1, 1fr);
    }
    
-   main{
+   .main{
        display: grid;
        grid-template-columns: 1fr;
        justify-items: center;
